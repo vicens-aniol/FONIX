@@ -521,12 +521,12 @@ if (mostCalorical.x < bill.x + 100 &&
  } */
 
 //Fases in obesity
-  if (document.getElementById('value_BIM').innerHTML > 50) {
+  if (document.getElementById('value_BIM').innerHTML >= 50) {
     document.getElementById("text_will_die").style.display = "inline";
     console.log("over-obesed");
     fases = 6;
   }
-  if (document.getElementById('value_BIM').innerHTML < 5) {
+  if (document.getElementById('value_BIM').innerHTML <= 5) {
     document.getElementById("text_will_die").style.display = "inline";
     console.log("underweight");
     fases = 7;
