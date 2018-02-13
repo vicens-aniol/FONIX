@@ -525,11 +525,15 @@ if (mostCalorical.x < bill.x + 100 &&
     document.getElementById("text_will_die").style.display = "inline";
     console.log("over-obesed");
     fases = 6;
+    document.getElementById("physical").style.display = "none";
+    document.removeEventListener('keydown', keydown_w);
   }
   if (document.getElementById('value_BIM').innerHTML <= 5) {
     document.getElementById("text_will_die").style.display = "inline";
     console.log("underweight");
     fases = 7;
+    document.getElementById("physical").style.display = "none";
+    document.removeEventListener('keydown', keydown_w);
     }
   if (inicialFeedNumber < 18.5) {
     document.getElementById("value_BIM").style.backgroundColor = "rgb(249, 238, 181)";
