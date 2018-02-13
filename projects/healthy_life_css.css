@@ -59,3 +59,19 @@ canvas {
   cursor: pointer;
   box-shadow:3px 2px 10px 2px rgba(0, 0, 0, 0.07);
 }
+
+#restart {
+  border:none;
+  background:rgb(255, 65, 103);
+  color:#fff;
+  padding:7px;
+  font-size:18px;
+  font-family:"Open Sans";
+  border-radius:5px;
+  margin-left:10px;
+}
+
+#restart:hover {
+  background:rgb(199, 0, 40);
+  cursor:pointer;
+}
