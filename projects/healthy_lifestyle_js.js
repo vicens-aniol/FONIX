@@ -35,7 +35,8 @@ var billFases = [
 ];
 var fases;
 
-var imgBill, imgCalorical, imgSomeCalorical, imgMediumCalorical, imgLittleCalorical, imgMostHealthier, imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy;
+var imgBill, imgCalorical, imgSomeCalorical, imgMediumCalorical, imgLittleCalorical, imgMostHealthier,
+imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy;
 
 var caloricalFood = [
   "healthy_lifestyle_sources/black.png", //not used
@@ -92,6 +93,14 @@ var someCaloricalFood = [
 ]
 var someCaloricalNum;
 
+var littleHealthyFood = [
+  "healthy_lifestyle_sources/aqua.png",
+  "healthy_lifestyle_sources/aqua.png",
+  "healthy_lifestyle_sources/aqua.png",
+  "healthy_lifestyle_sources/aqua.png",
+]
+var littleHealthyNum;
+
 function loadImages() {
   fases = 0;
   imgBill = new Image();
@@ -116,6 +125,9 @@ function loadImages() {
 
   someHealthyNum = 1;
   imgSomeHealthy = new Image();
+
+  littleHealthyNum = 1;
+  imgLittleHealthy = new Image();
 }
 
 var width = 400;
@@ -263,7 +275,14 @@ function drawSomeHealthy() {
   canvas.getContext("2d").drawImage(imgSomeHealthy,0,0,100,100,someHealthy.x,someHealthy.y,40,40);
 }
 
-
+var littleHealthy = {
+  y: Math.floor(Math.random() * -100) + -1000,
+  x: Math.floor(Math.random() * 300) + 1,
+}
+function drawLittleHealthy() {
+  imgLittleHealthy.src = littleHealthyFood[littleHealthyNum];
+  canvas.getContext("2d").drawImage(imgLittleHealthy,0,0,100,100,littleHealthy.x,littleHealthy.y,40,40);
+}
 
 function goDown() {
   //Most Healthier - 3 (Asparagus, Eggplant, Watermelon)
@@ -345,10 +364,34 @@ function goDown() {
   }
 
 // Little Healthy -0.5 (Cabagge, Onion, Mushroom)
-
+if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
+  littleHealthy.y += 4;
+}
+if (inicialFeedNumber > 50) {
+  littleHealthy.y += 0;
+}
+if (inicialFeedNumber < 5) {
+  littleHealthy.y += 0;
+}
+if (littleHealthy.y > 600) {
+  littleHealthy.y = Math.floor(Math.random() * -100) + -1000;;
+  littleHealthy.x = Math.floor(Math.random() * 360) + 1;
+  littleHealthyNum = Math.floor(Math.random() * 3) + 1;
+}
+if (littleHealthy.x < bill.x + 100 &&
+ littleHealthy.x + 40 > bill.x &&
+ littleHealthy.y < bill.y + 100 &&
+ 40 + littleHealthy.y > bill.y) {
+   littleHealthy.y = Math.floor(Math.random() * -100) + -1000;
+   littleHealthy.x = Math.floor(Math.random() * 360) + 1;
+   inicialFeedNumber -= 0.5;
+   document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+   littleHealthyNum = Math.floor(Math.random() * 3)+ 1;
+}
 // Littlest calorical 0.1 (Energy Drink)
 
 // Medium little calorical 0.3 (Banana, Milk
+
 // Little calorical +1 (Chicken, Salmon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     littleCalorical.y += 1.9;
@@ -542,6 +585,7 @@ function principal() {
   drawLittleCalorical();
   drawSomeHealthy();
   drawMostHealthier();
+  drawLittleHealthy();
   goDown();
 }
 var clics = 0;
