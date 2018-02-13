@@ -407,32 +407,8 @@ if (littleHealthy.x < bill.x + 100 &&
    littleHealthyNum = Math.floor(Math.random() * 3)+ 1;
 }
 
-// Medium little calorical 0.3 (Banana, Milk
+// Medium little calorical 0.3 (Banana, Milk)
 
-// Littlest calorical +1 (Energy Drink)
-
-  if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
-  littlestCalorical.y += 2.13;
-  }
-  if (inicialFeedNumber > 50) {
-  littlestCalorical.y += 0;
-  }
-  if (inicialFeedNumber < 5) {
-  littlestCalorical.y += 0;
-  }
-  if (littlestCalorical.y > 600) {
-  littlestCalorical.y = Math.floor(Math.random() * -100) + -1000;;
-  littlestCalorical.x = Math.floor(Math.random() * 360) + 1;
-  }
-  if (littlestCalorical.x < bill.x + 100 &&
-  littlestCalorical.x + 40 > bill.x &&
-  littlestCalorical.y < bill.y + 100 &&
-  40 + littlestCalorical.y > bill.y) {
-   littlestCalorical.y = Math.floor(Math.random() * -100) + -1000;
-   littlestCalorical.x = Math.floor(Math.random() * 360) + 1;
-   inicialFeedNumber += 1;
-   document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
-  }
 // Little calorical +1.5 (Chicken, Salmon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     littleCalorical.y += 1.9;
