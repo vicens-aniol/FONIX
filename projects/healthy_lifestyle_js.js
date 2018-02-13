@@ -36,7 +36,7 @@ var billFases = [
 var fases;
 
 var imgBill, imgCalorical, imgSomeCalorical, imgMediumCalorical, imgLittleCalorical, imgMostHealthier,
-imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical;
+imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical, imgMediumLittleCalorical;
 
 var caloricalFood = [
   "healthy_lifestyle_sources/black.png", //not used
@@ -107,6 +107,13 @@ var littlestCaloricalFood = [
 ]
 var littlestCaloricalNum;
 
+var mediumLittleCaloricalFood = [
+  "healthy_lifestyle_sources/aqua.png",
+  "healthy_lifestyle_sources/bill_100.png",
+  "healthy_lifestyle_sources/bill_100.png",
+]
+var mediumLittleCaloricalNum;
+
 function loadImages() {
   fases = 0;
   imgBill = new Image();
@@ -137,6 +144,9 @@ function loadImages() {
 
   littlestCaloricalNum = 1;
   imgLittlestCalorical = new Image();
+
+  mediumLittleCaloricalNum = 1;
+  imgMediumLittleCalorical = new Image();
 }
 
 var width = 400;
@@ -302,6 +312,15 @@ function drawLittlestCalorical() {
   canvas.getContext("2d").drawImage(imgLittlestCalorical,0,0,100,100,littlestCalorical.x,littlestCalorical.y,40,40);
 }
 
+var mediumLittleCalorical = {
+  y: Math.floor(Math.random() * -100) + -1200,
+  x: Math.floor(Math.random() * 300) + 1,
+}
+function drawMediumLittleCalorical() {
+  imgMediumLittleCalorical.src = mediumLittleCaloricalFood[mediumLittleCaloricalNum];
+  canvas.getContext("2d").drawImage(imgMediumLittleCalorical,0,0,100,100,mediumLittleCalorical.x,mediumLittleCalorical.y,40,40);
+}
+
 function goDown() {
   //Most Healthier - 3 (Asparagus, Eggplant, Watermelon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
@@ -408,7 +427,30 @@ if (littleHealthy.x < bill.x + 100 &&
 }
 
 // Medium little calorical 0.3 (Banana, Milk)
-
+  if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
+    mediumLittleCalorical.y += 1.9;
+  }
+  if (inicialFeedNumber > 50) {
+    mediumLittleCalorical.y += 0;
+  }
+  if (inicialFeedNumber < 5) {
+    mediumLittleCalorical.y += 0;
+  }
+  if (mediumLittleCalorical.y > 600) {
+    mediumLittleCalorical.y = Math.floor(Math.random() * -100) + -1200;;
+    mediumLittleCalorical.x = Math.floor(Math.random() * 360) + 1;
+    mediumLittleCaloricalNum = Math.floor(Math.random() * 2) + 1;
+  }
+  if (mediumLittleCalorical.x < bill.x + 100 &&
+   mediumLittleCalorical.x + 40 > bill.x &&
+   mediumLittleCalorical.y < bill.y + 100 &&
+   40 + mediumLittleCalorical.y > bill.y) {
+     mediumLittleCalorical.y = Math.floor(Math.random() * -100) + -1200;
+     mediumLittleCalorical.x = Math.floor(Math.random() * 360) + 1;
+     inicialFeedNumber += 0.3;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     mediumLittleCaloricalNum = Math.floor(Math.random() * 2) + 1;
+  }
 // Little calorical +1.5 (Chicken, Salmon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     littleCalorical.y += 1.9;
@@ -608,6 +650,7 @@ function principal() {
   drawMostHealthier();
   drawLittleHealthy();
   drawLittlestCalorical();
+  drawMediumLittleCalorical();
   goDown();
 }
 var clics = 0;
