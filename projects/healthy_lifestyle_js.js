@@ -421,7 +421,7 @@ if (littleHealthy.x < bill.x + 100 &&
  40 + littleHealthy.y > bill.y) {
    littleHealthy.y = Math.floor(Math.random() * -100) + -1000;
    littleHealthy.x = Math.floor(Math.random() * 360) + 1;
-   inicialFeedNumber -= += (0.5 * 10) / 10;;
+   inicialFeedNumber -= (0.5 * 10) / 10;;
    document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
    littleHealthyNum = Math.floor(Math.random() * 3)+ 1;
 }
