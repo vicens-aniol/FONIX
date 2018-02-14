@@ -421,12 +421,12 @@ if (littleHealthy.x < bill.x + 100 &&
  40 + littleHealthy.y > bill.y) {
    littleHealthy.y = Math.floor(Math.random() * -100) + -1000;
    littleHealthy.x = Math.floor(Math.random() * 360) + 1;
-   inicialFeedNumber -= 0.5;
+   inicialFeedNumber -= += (0.5 * 10) / 10;;
    document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
    littleHealthyNum = Math.floor(Math.random() * 3)+ 1;
 }
 
-// Medium little calorical +1.2 (Banana, Milk)
+// Medium little calorical +0.2 (Banana, Milk)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     mediumLittleCalorical.y += 1.9;
   }
@@ -447,7 +447,7 @@ if (littleHealthy.x < bill.x + 100 &&
    40 + mediumLittleCalorical.y > bill.y) {
      mediumLittleCalorical.y = Math.floor(Math.random() * -100) + -1200;
      mediumLittleCalorical.x = Math.floor(Math.random() * 360) + 1;
-     inicialFeedNumber += 1.2;
+     inicialFeedNumber += (0.2 * 10) / 10;
      document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
      mediumLittleCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
