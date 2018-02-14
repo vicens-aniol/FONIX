@@ -324,7 +324,7 @@ function drawMediumLittleCalorical() {
 function goDown() {
   //Most Healthier - 3 (Asparagus, Eggplant, Watermelon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
-    mostHealthier.y += 2.5;
+    mostHealthier.y += 2.9;
   }
   if (inicialFeedNumber > 50) {
     mostHealthier.y += 0;
