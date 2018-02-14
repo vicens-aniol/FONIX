@@ -2,6 +2,7 @@
 canvas {
   border:1px #000 solid;
   float:left;
+  background:#000;
 }
 #value_BIM {
   float:left;

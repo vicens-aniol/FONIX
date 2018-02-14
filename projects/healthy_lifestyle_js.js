@@ -160,7 +160,7 @@ function inicialize() {
   var ctx = canvas.getContext("2d");
   loadImages();
   inicialFeedNumber = 18.5;
-  document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+  document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
   console.log("inicialized");
 }
 function deleteCanvas() {
@@ -344,7 +344,7 @@ function goDown() {
      mostHealthier.y = Math.floor(Math.random() * -100) + -1000;
      mostHealthier.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 3;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      mostHealthierNum = Math.floor(Math.random() * 3)+ 1;
   }
 
@@ -371,7 +371,7 @@ function goDown() {
      healthier.y = Math.floor(Math.random() * -100) + -1000;
      healthier.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 2;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      healthierNum = Math.floor(Math.random() * 4) + 1;
 }
 // Some of it healthy -1 (Orange, Kiwi, 100% Fruit juice)
@@ -396,7 +396,7 @@ function goDown() {
      someHealthy.y = Math.floor(Math.random() * -100) + -1000;
      someHealthy.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 1;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      someHealthyNum = Math.floor(Math.random() * 3) + 1;
   }
 
@@ -421,8 +421,8 @@ if (littleHealthy.x < bill.x + 100 &&
  40 + littleHealthy.y > bill.y) {
    littleHealthy.y = Math.floor(Math.random() * -100) + -1000;
    littleHealthy.x = Math.floor(Math.random() * 360) + 1;
-   inicialFeedNumber -= (0.5 * 10) / 10;;
-   document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+   inicialFeedNumber -= (0.5 * 10) / 10;
+   document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
    littleHealthyNum = Math.floor(Math.random() * 3)+ 1;
 }
 
@@ -448,7 +448,7 @@ if (littleHealthy.x < bill.x + 100 &&
      mediumLittleCalorical.y = Math.floor(Math.random() * -100) + -1200;
      mediumLittleCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += (0.2 * 10) / 10;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      mediumLittleCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
 // Little calorical +1.5 (Chicken, Salmon)
@@ -472,8 +472,8 @@ if (littleHealthy.x < bill.x + 100 &&
    40 + littleCalorical.y > bill.y) {
      littleCalorical.y = Math.floor(Math.random() * -100) + -1000;
      littleCalorical.x = Math.floor(Math.random() * 360) + 1;
-     inicialFeedNumber += 1.5;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     inicialFeedNumber += (1.5 * 10) / 10;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      littleCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
 
@@ -499,7 +499,7 @@ if (littleHealthy.x < bill.x + 100 &&
      mediumCalorical.y = Math.floor(Math.random() * -100) + -1000;;
      mediumCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 2;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      mediumCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
 
@@ -525,7 +525,7 @@ if (littleHealthy.x < bill.x + 100 &&
      someCalorical.y = Math.floor(Math.random() * -100) + -1000;;
      someCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 5;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      someCaloricalNum = Math.floor(Math.random() * 3) + 1;
   }
 
@@ -551,7 +551,7 @@ if (littleHealthy.x < bill.x + 100 &&
      calorical.y = Math.floor(Math.random() * -100) + -1000;;
      calorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 5;
-     document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+     document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
      caloricalNum = Math.floor(Math.random() * 2) + 1;
   }
 
@@ -576,7 +576,7 @@ if (mostCalorical.x < bill.x + 100 &&
    mostCalorical.y = -100;
    mostCalorical.x = Math.floor(Math.random() * 360) + 1;
    inicialFeedNumber += 6;
-   document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+   document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
  } */
 
 //Fases in obesity
@@ -626,7 +626,7 @@ if (mostCalorical.x < bill.x + 100 &&
   }
 }
 // inicialFeedNumber += 5;
-// document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+// document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
 
 // -------BUCLE PRINCIPAL---------
 var FPS = 60;
@@ -657,7 +657,7 @@ var clics = 0;
 
 function physical() {
   inicialFeedNumber -= 6;
-  document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+  document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
   clics += 1;
   if (clics == 3){
     document.getElementById("physical").style.display = "none";
@@ -669,7 +669,7 @@ var keydown_w = function(event) {
   if(event.keyCode == 87) {
     console.log("physical");
     inicialFeedNumber -= 6;
-    document.getElementById('value_BIM').innerHTML = inicialFeedNumber;
+    document.getElementById('value_BIM').innerHTML = inicialFeedNumber * 10 / 10;
     clics += 1;
     if (clics == 3){
       document.getElementById("physical").style.display = "none";
