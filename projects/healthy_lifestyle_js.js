@@ -47,9 +47,9 @@ var caloricalNum;
 
 var mostHealthierFood = [
   "healthy_lifestyle_sources/black.png", //not used
-  "healthy_lifestyle_sources/green.png",
-  "healthy_lifestyle_sources/green.png",
-  "healthy_lifestyle_sources/green.png"
+  "healthy_lifestyle_sources/asparagus.png",
+  "healthy_lifestyle_sources/watermelon.png",
+  "healthy_lifestyle_sources/eggplant.png"
 ]
 var mostHealthierNum;
 
@@ -109,8 +109,8 @@ var littlestCaloricalNum;
 
 var mediumLittleCaloricalFood = [
   "healthy_lifestyle_sources/aqua.png",
-  "healthy_lifestyle_sources/bill_100.png",
-  "healthy_lifestyle_sources/bill_100.png",
+  "healthy_lifestyle_sources/green.png",
+  "healthy_lifestyle_sources/green.png",
 ]
 var mediumLittleCaloricalNum;
 
