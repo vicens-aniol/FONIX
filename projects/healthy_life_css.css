@@ -5,6 +5,7 @@ body {
 canvas {
   border:1px #000 solid;
   float:left;
+  background: url(healthy_lifestyle_sources/background_start.png);
 }
 #value_BIM {
   float:left;
