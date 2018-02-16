@@ -8,6 +8,7 @@ document.addEventListener('keydown', function(event) {
         console.log("start");
         start();
         goDown();
+
       }
     })
   }
@@ -632,6 +633,7 @@ if (mostCalorical.x < bill.x + 100 &&
 var FPS = 60;
 function start() {
 document.getElementById("physical").style.display = "block";
+document.getElementById("canvas").style.background = "url(healthy_lifestyle_sources/background_game.png)";
 setInterval(
   function() {
     principal();
