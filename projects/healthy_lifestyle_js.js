@@ -587,6 +587,7 @@ if (mostCalorical.x < bill.x + 100 &&
     fases = 6;
     document.getElementById("physical").style.display = "none";
     document.removeEventListener('keydown', keydown_w);
+    document.getElementById("restart").style.display = "block";
   }
   if (document.getElementById('value_BIM').innerHTML <= 5) {
     document.getElementById("text_will_die").style.display = "inline";
@@ -594,6 +595,7 @@ if (mostCalorical.x < bill.x + 100 &&
     fases = 7;
     document.getElementById("physical").style.display = "none";
     document.removeEventListener('keydown', keydown_w);
+    document.getElementById("restart").style.display = "block";
     }
   if (inicialFeedNumber < 18.5) {
     document.getElementById("value_BIM").style.backgroundColor = "rgb(249, 238, 181)";
