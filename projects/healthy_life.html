@@ -8,13 +8,37 @@
     <link rel="shortcut icon" href="healthy_lifestyle_sources/favicon.png">
   </head>
   <body onload="inicialize()">
+
     <img src="healthy_lifestyle_sources/healthylifestyle_logo.png" alt="logo" id="logo">
-    <canvas id="canvas" width="400" height="600"></canvas> <br><br>
+    <canvas id="canvas" width="400" height="600" onclick="start()"></canvas> <br><br>
     <p id="bim"><strong>BIM (Body Mass Index):<strong></p><br><br><br><p id="value_BIM">18.5</p>
       <br><br><br><br><br>
     <div id="you_will_die">
       <p id="text_will_die"><button onclick="location.reload();" id="restart">RESTART THE GAME</button></p>
     </div>
     <button type="button" name="button" onclick="physical()" id="physical" onload="display()">DO PHYSICAL ACTIVITY (W)</button>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <section id="game_instructions">
+      <br><h2><img src="healthy_lifestyle_sources/titles/game_instructions.png" alt="img" class="img-rounded center-block" id="game_instructions_img"></h2>
+      <p>This game is about following a varied and healthy diet with the aim of not being <em>anorexic</em> or <em>obese</em>.
+      On the screen, food will be going down, when Bill collides with one of these foods, it will increase or decrease, depending on the calories that this food has.
+      <br>(table)
+      <br>You'll start with 18.5 in Bill's <strong><em>BMI (Body Mass Index)</em></strong> that is the common and normal <em>BIM</em></p>
+      <h4><img src="healthy_lifestyle_sources/titles/bill_whos.png" alt="img" class="img-rounded center-block" id="whos_bill_img"></h4>
+      <p>Bill is the main character, which you control.</p>
+      <h4><img src="healthy_lifestyle_sources/titles/what_bmi.png" alt="img" class="img-rounded center-block" id="what_bmi_img"></h4>
+      <p>Body Mass Index (BMI) is a mathematical calculation involving height and weight, irrespective of family history, gender, age or race.
+      BMI is calculated by dividing a person's body weight in kilograms by their height in meters squared:</p>
+      <p><img src="https://image.ibb.co/jg7KmS/bmi_calc.png" width="170"></p>
+      <h3><img src="healthy_lifestyle_sources/titles/movements.png" alt="img" class="img-rounded center-block" id="movements_img"></h3>
+      <p><code>Left arrow</code> to move 5 pixels to the left.</p>
+      <p><code>Right arrow</code> to move 5 pixels to the right.</p>
+      <p><code>W</code> to do Physical Activity, decreasing 6 in <strong><em>BMI(Body Mass Index)</em></strong>&nbsp you'll be able use it 3 times during the game.</p>
+      <h3><img src="healthy_lifestyle_sources/titles/how_bill_die.png" alt="img" class="img-rounded center-block" id="bill_die_img"></h3>
+      <p>If your <strong><em>BMI(Body Mass Index)</em></strong> arrive at 5 or lower.</p>
+      <p>Else if your <strong><em>BMI(Body Mass Index)</em></strong> arrive at 50 or higher.</p>
+    </section>
+
   </body>
 </html>

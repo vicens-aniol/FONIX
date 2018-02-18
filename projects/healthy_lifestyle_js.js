@@ -1,19 +1,4 @@
 document.addEventListener('keydown', function(event) {
-  if(event.keyCode == 32) {
-    console.log("start");
-    start();
-    goDown();
-    document.removeEventListener('keydown', function(event) {
-      if(event.keyCode == 32) {
-        console.log("start");
-        start();
-        goDown();
-
-      }
-    })
-  }
-});
-document.addEventListener('keydown', function(event) {
   if(event.keyCode == 39) {
     console.log("right");
     move_right();
@@ -525,7 +510,7 @@ if (littleHealthy.x < bill.x + 100 &&
    40 + someCalorical.y > bill.y) {
      someCalorical.y = Math.floor(Math.random() * -100) + -1000;;
      someCalorical.x = Math.floor(Math.random() * 360) + 1;
-     inicialFeedNumber += 5;
+     inicialFeedNumber += 4;
      document.getElementById('value_BIM').innerHTML = inicialFeedNumber.toFixed(2);
      someCaloricalNum = Math.floor(Math.random() * 3) + 1;
   }
