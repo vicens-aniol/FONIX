@@ -289,7 +289,7 @@ var someHealthy = {
    y: Math.floor(Math.random() * -100) + -1000,
    x: Math.floor(Math.random() * 300) + 1,
    vx: 0,
- };
+ }
 function drawSomeHealthy() {
   imgSomeHealthy.src = someHealthyFood[someHealthyNum];
   canvas.getContext("2d").drawImage(imgSomeHealthy,0,0,100,100,someHealthy.x,someHealthy.y,40,40);
@@ -588,6 +588,18 @@ if (mostCalorical.x < bill.x + 100 &&
     document.getElementById("physical").style.display = "none";
     document.removeEventListener('keydown', keydown_w);
     document.getElementById("restart").style.display = "block";
+    document.getElementById("canvas").style.background = "url(healthy_lifestyle_sources/background_die.png)";
+    bill.y = -10000;
+    calorical.y = -1000;
+    healthier.y = -1000;
+    someCalorical.y = -1000;
+    mediumCalorical.y = -1000;
+    littleCalorical.y = -1000;
+    mostHealthier.y = -1000;
+    someHealthy.y = -1000;
+    littleHealthy.y = -1000;
+    littlestCalorical.y = -1000;
+    mediumLittleCalorical.y = -1000;
   }
   if (document.getElementById('value_BIM').innerHTML <= 5) {
     document.getElementById("text_will_die").style.display = "inline";
@@ -596,6 +608,18 @@ if (mostCalorical.x < bill.x + 100 &&
     document.getElementById("physical").style.display = "none";
     document.removeEventListener('keydown', keydown_w);
     document.getElementById("restart").style.display = "block";
+    document.getElementById("canvas").style.background = "url(healthy_lifestyle_sources/background_die.png)";
+    bill.y = -10000;
+    calorical.y = -1000;
+    healthier.y = -1000;
+    someCalorical.y = -1000;
+    mediumCalorical.y = -1000;
+    littleCalorical.y = -1000;
+    mostHealthier.y = -1000;
+    someHealthy.y = -1000;
+    littleHealthy.y = -1000;
+    littlestCalorical.y = -1000;
+    mediumLittleCalorical.y = -1000;
     }
   if (inicialFeedNumber < 18.5) {
     document.getElementById("value_BIM").style.backgroundColor = "rgb(249, 238, 181)";
