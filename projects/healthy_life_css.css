@@ -6,6 +6,10 @@ canvas {
   float:left;
   background: url(healthy_lifestyle_sources/background_start.png);
 }
+#logo {
+  margin-left:50px;
+  margin-top:50px;
+}
 #value_BIM {
   float:left;
   font-size:20px;
