@@ -25,9 +25,9 @@ var imgBill, imgCalorical, imgSomeCalorical, imgMediumCalorical, imgLittleCalori
 imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical, imgMediumLittleCalorical;
 
 var caloricalFood = [
-  "healthy_lifestyle_sources/black.png", //not used
-  "healthy_lifestyle_sources/black.png",
-  "healthy_lifestyle_sources/black.png"
+  "healthy_lifestyle_sources/hamburger.png", //not used
+  "healthy_lifestyle_sources/hamburger.png",
+  "healthy_lifestyle_sources/hamburger.png"
 ]
 var caloricalNum;
 
