@@ -26,8 +26,8 @@ imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical, 
 
 var caloricalFood = [
   "healthy_lifestyle_sources/hamburger.png", //not used
-  "healthy_lifestyle_sources/hamburger.png",
-  "healthy_lifestyle_sources/hamburger.png"
+  "healthy_lifestyle_sources/black.png",
+  "healthy_lifestyle_sources/black.png"
 ]
 var caloricalNum;
 
@@ -73,9 +73,9 @@ var mediumCaloricalNum;
 
 var someCaloricalFood = [
   "healthy_lifestyle_sources/yellow.png", //not used
-  "healthy_lifestyle_sources/yellow.png",
-  "healthy_lifestyle_sources/yellow.png",
-  "healthy_lifestyle_sources/yellow.png",
+  "healthy_lifestyle_sources/hamburger.png",
+  "healthy_lifestyle_sources/hamburger.png",
+  "healthy_lifestyle_sources/hamburger.png",
 ]
 var someCaloricalNum;
 
