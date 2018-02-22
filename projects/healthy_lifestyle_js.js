@@ -49,10 +49,10 @@ var someHealthyNum;
 
 var healthierFood = [
   "healthy_lifestyle_sources/white.png", //not used
-  "healthy_lifestyle_sources/white.png",
-  "healthy_lifestyle_sources/white.png",
-  "healthy_lifestyle_sources/white.png",
-  "healthy_lifestyle_sources/white.png"
+  "healthy_lifestyle_sources/potato.png",
+  "healthy_lifestyle_sources/potato.png",
+  "healthy_lifestyle_sources/potato.png",
+  "healthy_lifestyle_sources/potato.png"
 ]
 var healthierNum;
 
