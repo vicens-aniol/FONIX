@@ -26,8 +26,8 @@ imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical, 
 
 var caloricalFood = [
   "healthy_lifestyle_sources/hamburger.png", //not used
-  "healthy_lifestyle_sources/black.png",
-  "healthy_lifestyle_sources/black.png"
+  "healthy_lifestyle_sources/bacon.png",
+  "healthy_lifestyle_sources/bacon.png"
 ]
 var caloricalNum;
 
@@ -50,7 +50,8 @@ var someHealthyNum;
 var healthierFood = [
   "healthy_lifestyle_sources/white.png", //not used
   "healthy_lifestyle_sources/potato.png",
-  "healthy_lifestyle_sources/potato.png",
+  "healthy_lifestyle_sources/carrot.png",
+  "healthy_lifestyle_sources/coliflor.png",
   "healthy_lifestyle_sources/potato.png",
   "healthy_lifestyle_sources/potato.png"
 ]
@@ -65,25 +66,25 @@ var littleCaloricalNum;
 
 var mediumCaloricalFood = [
   "healthy_lifestyle_sources/red.png", //not used
-  "healthy_lifestyle_sources/red.png",
-  "healthy_lifestyle_sources/red.png",
-  "healthy_lifestyle_sources/red.png",
+  "healthy_lifestyle_sources/beff.png",
+  "healthy_lifestyle_sources/beff.png",
+  "healthy_lifestyle_sources/beff.png",
 ]
 var mediumCaloricalNum;
 
 var someCaloricalFood = [
   "healthy_lifestyle_sources/yellow.png", //not used
   "healthy_lifestyle_sources/hamburger.png",
-  "healthy_lifestyle_sources/hamburger.png",
+  "healthy_lifestyle_sources/fries.png",
   "healthy_lifestyle_sources/hamburger.png",
 ]
 var someCaloricalNum;
 
 var littleHealthyFood = [
   "healthy_lifestyle_sources/aqua.png",
-  "healthy_lifestyle_sources/aqua.png",
-  "healthy_lifestyle_sources/aqua.png",
-  "healthy_lifestyle_sources/aqua.png",
+  "healthy_lifestyle_sources/cabagge.png",
+  "healthy_lifestyle_sources/cabagge.png",
+  "healthy_lifestyle_sources/cabagge.png",
 ]
 var littleHealthyNum;
 
@@ -217,7 +218,7 @@ var calorical = {
  };
 function drawCalorical() {
   imgCalorical.src = caloricalFood[caloricalNum];
-  canvas.getContext("2d").drawImage(imgCalorical,0,0,100,100,calorical.x,calorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgCalorical,0,0,100,100,calorical.x,calorical.y,45,45);
 }
 
 var healthier = {
@@ -227,7 +228,7 @@ var healthier = {
  };
 function drawHealthier() {
   imgHealthier.src = healthierFood[healthierNum];
-  canvas.getContext("2d").drawImage(imgHealthier,0,0,100,100,healthier.x,healthier.y,40,40);
+  canvas.getContext("2d").drawImage(imgHealthier,0,0,100,100,healthier.x,healthier.y,45,45);
 }
 
 var someCalorical = {
@@ -237,7 +238,7 @@ var someCalorical = {
 }
 function drawSomeCalorical() {
   imgSomeCalorical.src = someCaloricalFood[someCaloricalNum];
-  canvas.getContext("2d").drawImage(imgSomeCalorical,0,0,100,100,someCalorical.x,someCalorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgSomeCalorical,0,0,100,100,someCalorical.x,someCalorical.y,45,45);
 }
 
 var mediumCalorical = {
@@ -247,7 +248,7 @@ var mediumCalorical = {
 }
 function drawMediumCalorical() {
   imgMediumCalorical.src = mediumCaloricalFood[mediumCaloricalNum];
-  canvas.getContext("2d").drawImage(imgMediumCalorical,0,0,100,100,mediumCalorical.x,mediumCalorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgMediumCalorical,0,0,100,100,mediumCalorical.x,mediumCalorical.y,45,45);
 }
 
 var littleCalorical = {
@@ -257,7 +258,7 @@ var littleCalorical = {
 }
 function drawLittleCalorical() {
   imgLittleCalorical.src = littleCaloricalFood[littleCaloricalNum];
-  canvas.getContext("2d").drawImage(imgLittleCalorical,0,0,100,100,littleCalorical.x,littleCalorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgLittleCalorical,0,0,100,100,littleCalorical.x,littleCalorical.y,45,45);
 }
 
 var mostHealthier = {
@@ -267,7 +268,7 @@ var mostHealthier = {
  };
 function drawMostHealthier() {
   imgMostHealthier.src = mostHealthierFood[mostHealthierNum];
-  canvas.getContext("2d").drawImage(imgMostHealthier,0,0,100,100,mostHealthier.x,mostHealthier.y,40,40);
+  canvas.getContext("2d").drawImage(imgMostHealthier,0,0,100,100,mostHealthier.x,mostHealthier.y,45,45);
 }
 
 var someHealthy = {
@@ -277,7 +278,7 @@ var someHealthy = {
  }
 function drawSomeHealthy() {
   imgSomeHealthy.src = someHealthyFood[someHealthyNum];
-  canvas.getContext("2d").drawImage(imgSomeHealthy,0,0,100,100,someHealthy.x,someHealthy.y,40,40);
+  canvas.getContext("2d").drawImage(imgSomeHealthy,0,0,100,100,someHealthy.x,someHealthy.y,45,45);
 }
 
 var littleHealthy = {
@@ -286,7 +287,7 @@ var littleHealthy = {
 }
 function drawLittleHealthy() {
   imgLittleHealthy.src = littleHealthyFood[littleHealthyNum];
-  canvas.getContext("2d").drawImage(imgLittleHealthy,0,0,100,100,littleHealthy.x,littleHealthy.y,40,40);
+  canvas.getContext("2d").drawImage(imgLittleHealthy,0,0,100,100,littleHealthy.x,littleHealthy.y,45,45);
 }
 
 var littlestCalorical = {
@@ -295,7 +296,7 @@ var littlestCalorical = {
 }
 function drawLittlestCalorical() {
   imgLittlestCalorical.src = littlestCaloricalFood[littlestCaloricalNum];
-  canvas.getContext("2d").drawImage(imgLittlestCalorical,0,0,100,100,littlestCalorical.x,littlestCalorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgLittlestCalorical,0,0,100,100,littlestCalorical.x,littlestCalorical.y,45,45);
 }
 
 var mediumLittleCalorical = {
@@ -304,7 +305,7 @@ var mediumLittleCalorical = {
 }
 function drawMediumLittleCalorical() {
   imgMediumLittleCalorical.src = mediumLittleCaloricalFood[mediumLittleCaloricalNum];
-  canvas.getContext("2d").drawImage(imgMediumLittleCalorical,0,0,100,100,mediumLittleCalorical.x,mediumLittleCalorical.y,40,40);
+  canvas.getContext("2d").drawImage(imgMediumLittleCalorical,0,0,100,100,mediumLittleCalorical.x,mediumLittleCalorical.y,45,45);
 }
 
 function goDown() {
@@ -324,9 +325,9 @@ function goDown() {
     mostHealthierNum = Math.floor(Math.random() * 3) + 1;
   }
   if (mostHealthier.x < bill.x + 100 &&
-   mostHealthier.x + 40 > bill.x &&
+   mostHealthier.x + 45 > bill.x &&
    mostHealthier.y < bill.y + 100 &&
-   40 + mostHealthier.y > bill.y) {
+   45 + mostHealthier.y > bill.y) {
      mostHealthier.y = Math.floor(Math.random() * -100) + -1000;
      mostHealthier.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 3;
@@ -334,7 +335,7 @@ function goDown() {
      mostHealthierNum = Math.floor(Math.random() * 3)+ 1;
   }
 
-  //Healthier -2 (Potatoe, Tomatoe, Strawberry, Broccoli)
+  //Healthier -2 (Potatoe, Tomatoe, Strawberry, Broccoli, Carrot)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     healthier.y += 2;
   }
@@ -347,18 +348,18 @@ function goDown() {
   if (healthier.y > 600) {
     healthier.y = Math.floor(Math.random() * -100) + -1000;
     healthier.x = Math.floor(Math.random() * 360) + 1;
-    healthierNum = Math.floor(Math.random() * 4) + 1;
+    healthierNum = Math.floor(Math.random() * 5) + 1;
   }
   if (healthier.x < bill.x + 100 &&
-   healthier.x + 40 > bill.x &&
+   healthier.x + 45 > bill.x &&
    healthier.y < bill.y + 100 &&
-   40 + healthier.y > bill.y) {
+   45 + healthier.y > bill.y) {
 
      healthier.y = Math.floor(Math.random() * -100) + -1000;
      healthier.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 2;
      document.getElementById('value_BIM').innerHTML = inicialFeedNumber.toFixed(2);
-     healthierNum = Math.floor(Math.random() * 4) + 1;
+     healthierNum = Math.floor(Math.random() * 5) + 1;
 }
 // Some of it healthy -1 (Orange, Kiwi, 100% Fruit juice)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
@@ -376,9 +377,9 @@ function goDown() {
     someHealthyNum = Math.floor(Math.random() * 3) + 1;
   }
   if (someHealthy.x < bill.x + 100 &&
-   someHealthy.x + 40 > bill.x &&
+   someHealthy.x + 45 > bill.x &&
    someHealthy.y < bill.y + 100 &&
-   40 + someHealthy.y > bill.y) {
+   45 + someHealthy.y > bill.y) {
      someHealthy.y = Math.floor(Math.random() * -100) + -1000;
      someHealthy.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 1;
@@ -402,9 +403,9 @@ if (littleHealthy.y > 600) {
   littleHealthyNum = Math.floor(Math.random() * 3) + 1;
 }
 if (littleHealthy.x < bill.x + 100 &&
- littleHealthy.x + 40 > bill.x &&
+ littleHealthy.x + 45 > bill.x &&
  littleHealthy.y < bill.y + 100 &&
- 40 + littleHealthy.y > bill.y) {
+ 45 + littleHealthy.y > bill.y) {
    littleHealthy.y = Math.floor(Math.random() * -100) + -1000;
    littleHealthy.x = Math.floor(Math.random() * 360) + 1;
    inicialFeedNumber -= (0.5 * 10) / 10;
@@ -428,9 +429,9 @@ if (littleHealthy.x < bill.x + 100 &&
     mediumLittleCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
   if (mediumLittleCalorical.x < bill.x + 100 &&
-   mediumLittleCalorical.x + 40 > bill.x &&
+   mediumLittleCalorical.x + 45 > bill.x &&
    mediumLittleCalorical.y < bill.y + 100 &&
-   40 + mediumLittleCalorical.y > bill.y) {
+   45 + mediumLittleCalorical.y > bill.y) {
      mediumLittleCalorical.y = Math.floor(Math.random() * -100) + -1200;
      mediumLittleCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += (0.2 * 10) / 10;
@@ -453,9 +454,9 @@ if (littleHealthy.x < bill.x + 100 &&
     littleCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
   if (littleCalorical.x < bill.x + 100 &&
-   littleCalorical.x + 40 > bill.x &&
+   littleCalorical.x + 45 > bill.x &&
    littleCalorical.y < bill.y + 100 &&
-   40 + littleCalorical.y > bill.y) {
+   45 + littleCalorical.y > bill.y) {
      littleCalorical.y = Math.floor(Math.random() * -100) + -1000;
      littleCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += (1.5 * 10) / 10;
@@ -479,9 +480,9 @@ if (littleHealthy.x < bill.x + 100 &&
     mediumCaloricalNum = Math.floor(Math.random() * 2) + 1;
   }
   if (mediumCalorical.x < bill.x + 100 &&
-   mediumCalorical.x + 40 > bill.x &&
+   mediumCalorical.x + 45 > bill.x &&
    mediumCalorical.y < bill.y + 100 &&
-   40 + mediumCalorical.y > bill.y) {
+   45 + mediumCalorical.y > bill.y) {
      mediumCalorical.y = Math.floor(Math.random() * -100) + -1000;;
      mediumCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 2;
@@ -505,9 +506,9 @@ if (littleHealthy.x < bill.x + 100 &&
     someCaloricalNum = Math.floor(Math.random() * 3) + 1;
   }
   if (someCalorical.x < bill.x + 100 &&
-   someCalorical.x + 40 > bill.x &&
+   someCalorical.x + 45 > bill.x &&
    someCalorical.y < bill.y + 100 &&
-   40 + someCalorical.y > bill.y) {
+   45 + someCalorical.y > bill.y) {
      someCalorical.y = Math.floor(Math.random() * -100) + -1000;;
      someCalorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 4;
@@ -531,9 +532,9 @@ if (littleHealthy.x < bill.x + 100 &&
     caloricalNum = Math.floor(Math.random() * 2) + 1;
   }
   if (calorical.x < bill.x + 100 &&
-   calorical.x + 40 > bill.x &&
+   calorical.x + 45 > bill.x &&
    calorical.y < bill.y + 100 &&
-   40 + calorical.y > bill.y) {
+   45 + calorical.y > bill.y) {
      calorical.y = Math.floor(Math.random() * -100) + -1000;;
      calorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 5;
@@ -556,9 +557,9 @@ if (mostCalorical.y > 600) {
   mostCalorical.x = Math.floor(Math.random() * 360) + 1;
 }
 if (mostCalorical.x < bill.x + 100 &&
- mostCalorical.x + 40 > bill.x &&
+ mostCalorical.x + 50 > bill.x &&
  mostCalorical.y < bill.y + 100 &&
- 40 + mostCalorical.y > bill.y) {
+ 50 + mostCalorical.y > bill.y) {
    mostCalorical.y = -100;
    mostCalorical.x = Math.floor(Math.random() * 360) + 1;
    inicialFeedNumber += 6;
