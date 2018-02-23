@@ -51,7 +51,6 @@ var healthierFood = [
   "healthy_lifestyle_sources/white.png", //not used
   "healthy_lifestyle_sources/potato.png",
   "healthy_lifestyle_sources/carrot.png",
-  "healthy_lifestyle_sources/coliflor.png",
   "healthy_lifestyle_sources/potato.png",
   "healthy_lifestyle_sources/potato.png"
 ]
@@ -334,7 +333,7 @@ function goDown() {
      mostHealthierNum = Math.floor(Math.random() * 3)+ 1;
   }
 
-  //Healthier -2 (Potatoe, Tomatoe, Strawberry, Broccoli, Carrot)
+  //Healthier -2 (Potatoe, Tomatoe, Strawberry, Carrot)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     healthier.y += 2;
   }
@@ -347,7 +346,7 @@ function goDown() {
   if (healthier.y > 600) {
     healthier.y = Math.floor(Math.random() * -100) + -1000;
     healthier.x = Math.floor(Math.random() * 360) + 1;
-    healthierNum = Math.floor(Math.random() * 5) + 1;
+    healthierNum = Math.floor(Math.random() * 4) + 1;
   }
   if (healthier.x < bill.x + 100 &&
    healthier.x + 45 > bill.x &&
@@ -358,7 +357,7 @@ function goDown() {
      healthier.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber -= 2;
      document.getElementById('value_BIM').innerHTML = inicialFeedNumber.toFixed(2);
-     healthierNum = Math.floor(Math.random() * 5) + 1;
+     healthierNum = Math.floor(Math.random() * 4) + 1;
 }
 // Some of it healthy -1 (Orange, Kiwi, 100% Fruit juice)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
