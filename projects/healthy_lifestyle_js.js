@@ -81,7 +81,7 @@ var someCaloricalNum;
 var littleHealthyFood = [
   "healthy_lifestyle_sources/aqua.png",
   "healthy_lifestyle_sources/cabagge.png",
-  "healthy_lifestyle_sources/cabagge.png",
+  "healthy_lifestyle_sources/onion.png",
   "healthy_lifestyle_sources/cabagge.png",
 ]
 var littleHealthyNum;
