@@ -59,16 +59,15 @@ var healthierNum;
 
 var littleCaloricalFood = [
   "healthy_lifestyle_sources/purple.png", //not used
-  "healthy_lifestyle_sources/purple.png",
-  "healthy_lifestyle_sources/purple.png",
+  "healthy_lifestyle_sources/fish.png",
+  "healthy_lifestyle_sources/fish.png",
 ]
 var littleCaloricalNum;
 
 var mediumCaloricalFood = [
   "healthy_lifestyle_sources/red.png", //not used
   "healthy_lifestyle_sources/beff.png",
-  "healthy_lifestyle_sources/beff.png",
-  "healthy_lifestyle_sources/beff.png",
+  "healthy_lifestyle_sources/bread.png",
 ]
 var mediumCaloricalNum;
 
