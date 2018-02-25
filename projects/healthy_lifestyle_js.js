@@ -28,6 +28,7 @@ var caloricalFood = [
   "healthy_lifestyle_sources/hamburger.png", //not used
   "healthy_lifestyle_sources/bacon.png",
   "healthy_lifestyle_sources/chocolate.png"
+  "healthy_lifestyle_sources/cake.png"
 ]
 var caloricalNum;
 
@@ -514,7 +515,7 @@ if (littleHealthy.x < bill.x + 100 &&
      someCaloricalNum = Math.floor(Math.random() * 3) + 1;
   }
 
-// Calorical +5 (Chocolate, Bacon)
+// Calorical +5 (Chocolate, Bacon, Cake)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     calorical.y += 2;
   }
@@ -527,7 +528,7 @@ if (littleHealthy.x < bill.x + 100 &&
   if (calorical.y > 600) {
     calorical.y = Math.floor(Math.random() * -100) + -1000;;
     calorical.x = Math.floor(Math.random() * 360) + 1;
-    caloricalNum = Math.floor(Math.random() * 2) + 1;
+    caloricalNum = Math.floor(Math.random() * 3) + 1;
   }
   if (calorical.x < bill.x + 100 &&
    calorical.x + 45 > bill.x &&
@@ -537,7 +538,7 @@ if (littleHealthy.x < bill.x + 100 &&
      calorical.x = Math.floor(Math.random() * 360) + 1;
      inicialFeedNumber += 5;
      document.getElementById('value_BIM').innerHTML = inicialFeedNumber.toFixed(2);
-     caloricalNum = Math.floor(Math.random() * 2) + 1;
+     caloricalNum = Math.floor(Math.random() * 3) + 1;
   }
 
 // To me = Ignore
