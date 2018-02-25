@@ -27,7 +27,7 @@ imgSomeHealthy, imgLittleHealthy, imgMediumLittleHealthy, imgLittlestCalorical, 
 var caloricalFood = [
   "healthy_lifestyle_sources/hamburger.png", //not used
   "healthy_lifestyle_sources/bacon.png",
-  "healthy_lifestyle_sources/bacon.png"
+  "healthy_lifestyle_sources/chocolate.png"
 ]
 var caloricalNum;
 
@@ -41,25 +41,25 @@ var mostHealthierNum;
 
 var someHealthyFood = [
   "healthy_lifestyle_sources/black.png", //not used
-  "healthy_lifestyle_sources/brown.png",
-  "healthy_lifestyle_sources/brown.png",
-  "healthy_lifestyle_sources/brown.png"
+  "healthy_lifestyle_sources/kiwi.png",
+  "healthy_lifestyle_sources/orange.png",
+  "healthy_lifestyle_sources/fruit_juice.png"
 ]
 var someHealthyNum;
 
 var healthierFood = [
   "healthy_lifestyle_sources/white.png", //not used
   "healthy_lifestyle_sources/potato.png",
-  "healthy_lifestyle_sources/carrot.png",
-  "healthy_lifestyle_sources/potato.png",
-  "healthy_lifestyle_sources/potato.png"
+  "healthy_lifestyle_sources/tomatoe.png",
+  "healthy_lifestyle_sources/strawberry.png",
+  "healthy_lifestyle_sources/carrot.png"
 ]
 var healthierNum;
 
 var littleCaloricalFood = [
   "healthy_lifestyle_sources/purple.png", //not used
   "healthy_lifestyle_sources/fish.png",
-  "healthy_lifestyle_sources/fish.png",
+  "healthy_lifestyle_sources/chicken.png",
 ]
 var littleCaloricalNum;
 
@@ -74,7 +74,7 @@ var someCaloricalFood = [
   "healthy_lifestyle_sources/yellow.png", //not used
   "healthy_lifestyle_sources/hamburger.png",
   "healthy_lifestyle_sources/fries.png",
-  "healthy_lifestyle_sources/hamburger.png",
+  "healthy_lifestyle_sources/cookie.png",
 ]
 var someCaloricalNum;
 
@@ -82,7 +82,7 @@ var littleHealthyFood = [
   "healthy_lifestyle_sources/aqua.png",
   "healthy_lifestyle_sources/cabagge.png",
   "healthy_lifestyle_sources/onion.png",
-  "healthy_lifestyle_sources/cabagge.png",
+  "healthy_lifestyle_sources/mushroom.png",
 ]
 var littleHealthyNum;
 
@@ -94,8 +94,8 @@ var littlestCaloricalNum;
 
 var mediumLittleCaloricalFood = [
   "healthy_lifestyle_sources/aqua.png",
-  "healthy_lifestyle_sources/green.png",
-  "healthy_lifestyle_sources/green.png",
+  "healthy_lifestyle_sources/banana.png",
+  "healthy_lifestyle_sources/milk.png",
 ]
 var mediumLittleCaloricalNum;
 
@@ -514,7 +514,7 @@ if (littleHealthy.x < bill.x + 100 &&
      someCaloricalNum = Math.floor(Math.random() * 3) + 1;
   }
 
-// Calorical +5 (Chocolate, Bacon, Peanut)
+// Calorical +5 (Chocolate, Bacon)
   if (inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     calorical.y += 2;
   }
