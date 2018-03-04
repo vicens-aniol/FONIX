@@ -9,6 +9,39 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
+var mousePos;
+function moveConf(){ 
+       function writeMessage(canvas, message) {
+        var context = canvas.getContext('2d');
+        document.getElementById('canvas').getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+        document.getElementById('canvas').getContext('2d').font = '18pt Calibri';
+        document.getElementById('canvas').getContext('2d').fillStyle = 'black';        document.getElementById('canvas').getContext('2d').fillText(message, 10, 25);
+      }
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+      var canvas = document.getElementById('canvas');
+      var context = document.getElementById('canvas').getContext('2d');     
+      canvas.addEventListener('click', function(evt) {
+        mousePos = getMousePos(canvas, evt);
+        console.log(mousePos.x);
+        console.log(mousePos.y);
+      }, true);  
+              
+    if (mousePos.x < canvas.width - canvas.width / 2) {
+        console.log("left");
+        move_left();
+        }
+    if (mousePos.x > canvas.width - canvas.width / 2) {
+        console.log("left");
+        move_right();
+        }
+}
+
 var billFases = [
   "healthy_lifestyle_sources/bill_100.png",
   "healthy_lifestyle_sources/bill_100_underweight.png",
@@ -168,44 +201,44 @@ function drawBill() {
 function move_right() {
   if (bill.x < 300 && inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     if (inicialFeedNumber < 18.5) {
-      bill.x += 10;
+      bill.x += 19;
     }
     if (inicialFeedNumber <= 24.9 && inicialFeedNumber >= 18.5) {
-      bill.x += 8;
+      bill.x += 17;
     }
     if (inicialFeedNumber <= 29.9 && inicialFeedNumber >= 25) {
-      bill.x += 7;
+      bill.x += 16;
     }
     if (inicialFeedNumber <= 34.9 && inicialFeedNumber >= 30) {
-      bill.x += 6;
+      bill.x += 15;
     }
     if (inicialFeedNumber <= 39.9 && inicialFeedNumber >= 35) {
-      bill.x += 5;
+      bill.x += 14;
     }
     if (inicialFeedNumber > 40) {
-      bill.x += 4;
+      bill.x += 13;
     }
   }
 }
 function move_left() {
   if (bill.x > 0 && inicialFeedNumber < 50 && inicialFeedNumber > 5) {
     if (inicialFeedNumber < 18.5) {
-      bill.x -= 10;
+      bill.x -= 19;
     }
     if (inicialFeedNumber <= 24.9 && inicialFeedNumber >= 18.5) {
-      bill.x -= 8;
+      bill.x -= 17;
     }
     if (inicialFeedNumber <= 29.9 && inicialFeedNumber >= 25) {
-      bill.x -= 7;
+      bill.x -= 16;
     }
     if (inicialFeedNumber <= 34.9 && inicialFeedNumber >= 30) {
-      bill.x -= 6;
+      bill.x -= 15;
     }
     if (inicialFeedNumber <= 39.9 && inicialFeedNumber >= 35) {
-      bill.x -= 5;
+      bill.x -= 14;
     }
     if (inicialFeedNumber > 40) {
-      bill.x -= 4;
+      bill.x -= 13;
     }
   }
 }
@@ -641,14 +674,18 @@ if (mostCalorical.x < bill.x + 100 &&
 // document.getElementById('value_BIM').innerHTML = inicialFeedNumber.toFixed(2);
 
 // -------BUCLE PRINCIPAL---------
+var back = 0;
 var FPS = 60;
 function start() {
+    if (back == 0) {
 document.getElementById("physical").style.display = "block";
 document.getElementById("canvas").style.background = "url(healthy_lifestyle_sources/background_game.png)";
 setInterval(
   function() {
     principal();
   }, 1000/FPS);
+        back++;
+    }
 }
 
 function principal() {
@@ -691,3 +728,9 @@ var keydown_w = function(event) {
   }
 }
 document.addEventListener('keydown', keydown_w);
+
+
+
+
+
+      

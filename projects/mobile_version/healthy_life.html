@@ -9,12 +9,12 @@
   </head>
   <body onload="inicialize()">
       <p id="bim"><strong>BIM (Body Mass Index):<strong></p><br><br><br><p id="value_BIM">18.5</p>
-   <canvas id="canvas" width="400" height="600" onclick="start()"></canvas> <br><br>
+   <canvas id="canvas" width="400" height="600" onclick="start(); moveConf();"></canvas> <br><br>
       <br><br>
     <div id="you_will_die">
       <p id="text_will_die"><button onclick="location.reload();" id="restart">RESTART THE GAME</button></p>
     </div>
-    <button type="button" name="button" onclick="physical()" id="physical" onload="display()">DO PHYSICAL ACTIVITY (W)</button>
-    
+    <button type="button" name="button" onclick="physical()" id="physical" onload="display()">DO PHYSICAL ACTIVITY</button>
     </body>
 </html>
+      
