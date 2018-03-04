@@ -1,3 +1,4 @@
-[![Build Status](https://travis-ci.org/vicens-aniol/FONIX.svg?branch=master)](https://travis-ci.org/vicens-aniol/FONIX)
+![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)
+
 # FONIX
 FONIX project
