@@ -10,12 +10,13 @@ document.addEventListener('keydown', function (event) {
 });
 
 var mousePos;
-function moveConf(){ 
+function moveConf(){
        function writeMessage(canvas, message) {
         var context = canvas.getContext('2d');
         document.getElementById('canvas').getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
         document.getElementById('canvas').getContext('2d').font = '18pt Calibri';
-        document.getElementById('canvas').getContext('2d').fillStyle = 'black';        document.getElementById('canvas').getContext('2d').fillText(message, 10, 25);
+        document.getElementById('canvas').getContext('2d').fillStyle = 'black';
+        document.getElementById('canvas').getContext('2d').fillText(message, 10, 25);
       }
       function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
@@ -25,13 +26,13 @@ function moveConf(){
         };
       }
       var canvas = document.getElementById('canvas');
-      var context = document.getElementById('canvas').getContext('2d');     
-      canvas.addEventListener('click', function(evt) {
+      var context = document.getElementById('canvas').getContext('2d');
+      canvas.addEventListener('mousedown', function(evt) {
         mousePos = getMousePos(canvas, evt);
         console.log(mousePos.x);
         console.log(mousePos.y);
-      }, true);  
-              
+      }, true);
+
     if (mousePos.x < canvas.width - canvas.width / 2) {
         console.log("left");
         move_left();
@@ -728,9 +729,3 @@ var keydown_w = function(event) {
   }
 }
 document.addEventListener('keydown', keydown_w);
-
-
-
-
-
-      
