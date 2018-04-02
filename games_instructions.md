@@ -5,7 +5,7 @@ On the screen, some calories will be going down, some not so much:
 When Bill collides with one of these foods, it will increase or decrease, depending on the calories that this food has.
 You start with 18.5 in Bill's ***BMI(Body Mass Index)*** that is the common *BIM*
 #### Who's Bill?
-Bill is the main character.
+Bill is the main character. He love pizza, but sometimes is better to eat not calorific food than a pizza.
 
 #### What is BMI?
 Body Mass Index (BMI) is a mathematical calculation involving height and weight, irrespective of family history, gender, age or race. 
